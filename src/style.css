@@ -10,7 +10,7 @@ body {
     margin: 0;
     background: #eeeeF4;
     font-family: "Mona Sans", sans-serif;
-    ;
+    
 
 }
 
@@ -130,7 +130,49 @@ button {
 .nav-btn:active {
     transform: scale(1);
 }
+.hamburger {
+    display: none;
+    color : black;
+}
+@media (max-width: 768px) {
 
+    .nav {
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        background: white;
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+
+        display: none;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none; /* optional: hide login button on mobile */
+    }
+}
 
 .hero {
 
@@ -145,6 +187,17 @@ button {
 
     width: 450px;
 
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 
 .cards {
@@ -170,6 +223,15 @@ button {
 
 }
 
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: auto;
+    }
+}
 .needs {
 
     padding: 80px 0 0;
@@ -282,12 +344,8 @@ button {
 .need-card h3 {
 
     font-size: 20px;
-
-    color: #353545;
-
-    color: #343444;
-
-    margin-bottom: 10px;
+     color: #343444;
+      margin-bottom: 10px;
     transition: color .3s ease;
 }
 
@@ -451,6 +509,22 @@ button {
     color: #6c63ff;
 }
 
+@media (max-width: 768px) {
+    .cta-button-box {
+        transform: scale(0.9);
+    }
+
+    .left-arrow-svg,
+    .right-arrow-svg {
+        display: none;
+    }
+
+    .left-note,
+    .right-note {
+        display: none;
+    }
+}
+
 .trusted {
     padding: 40px 55px 80px;
     text-align: center;
@@ -503,20 +577,18 @@ button {
     transform: scale(1.08);
 }
 
-
-
-
-@media(max-width:700px) {
-
+@media (max-width: 768px) {
     .logos {
-
         flex-wrap: wrap;
-
         justify-content: center;
-
+        gap: 20px;
     }
 
+    .logos img {
+        height: 30px;
+    }
 }
+
 
 .features {
 
@@ -558,11 +630,7 @@ button {
 
 
 
-.top-row .feature-card:first-child {
-
-    flex: 1;
-
-}
+.top-row .feature-card:first-child { flex: 1;}
 
 
 .top-row .feature-card:last-child {flex: 1.35;}
@@ -579,16 +647,11 @@ button {
 .feature-card {
 
     background: white;
-
     border: 1px solid #e5e5f0;
-
-    border-radius: 20px;
-
+     border-radius: 20px;
     overflow: hidden;
-
     min-height: 260px;
-
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .06);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, .06);
     position: relative;
     cursor: pointer;
     transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
@@ -621,14 +684,10 @@ button {
 
 
 .feature-card img {
-
-    width: 100%;
-
-    height: 150px;
-
-    object-fit: contain;
-
-    padding: 20px;
+width: 100%;
+height: 150px;
+object-fit: contain;
+padding: 20px;
 
 }
 
@@ -636,6 +695,15 @@ button {
     transform: scale(1.08);
 }
 
+@media (max-width: 768px) {
+    .feature-row {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        min-height: auto;
+    }
+}
 .content {
 
     padding: 0 25px 25px;
@@ -667,15 +735,6 @@ button {
 }
 
 
-@media(max-width:700px) {
-
-    .feature-row {
-
-        flex-direction: column;
-
-    }
-
-}
 
 .insights {
     padding: 70px 70px 30px;
@@ -735,20 +794,14 @@ button {
     transform: scale(1.05);
 }
 
-.insight-text {
-
-    flex: 1;
-
-}
+.insight-text { flex: 1;}
 
 
 
 .insight-text h2 {
 
     font-size: 28px;
-
     color: #343444;
-
     margin-bottom: 15px;
 
 }
@@ -756,12 +809,9 @@ button {
 
 
 .insight-text p {
-
-    color: #8b8ba0;
-
-    line-height: 1.6;
-
-    margin-bottom: 25px;
+color: #8b8ba0;
+line-height: 1.6;
+margin-bottom: 25px;
 
 }
 
@@ -790,23 +840,18 @@ button {
 }
 
 
-@media(max-width:800px) {
 
+@media (max-width: 768px) {
     .insight-row {
-
         flex-direction: column;
-
-        gap: 30px;
-
+        gap: 25px;
+        text-align: center;
     }
 
-
-    .insight-row:nth-child(even) {
-
-        flex-direction: column;
-
+    .insight-image {
+        width: 100%;
+        height: auto;
     }
-
 }
 
 .footer {
@@ -919,7 +964,7 @@ button {
     color: #ffffff;
 }
 
-/* Bottom bar */
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -937,7 +982,7 @@ button {
     color: #ffffff;
 }
 
-/* Responsive */
+
 @media (max-width: 992px) {
     .footer-top {
         grid-template-columns: 1fr 1fr;
@@ -957,5 +1002,33 @@ button {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .website {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .nav {
+        padding: 0 20px;
+    }
+
+    .links {
+        gap: 15px;
+        font-size: 12px;
     }
 }

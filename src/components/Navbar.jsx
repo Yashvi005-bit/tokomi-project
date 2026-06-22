@@ -1,7 +1,8 @@
 import logo from "../assets/logo.png"
+import { useState } from "react";
 
 function Navbar(){
-
+const [open, setOpen] = useState(false);
 
 return (
 
@@ -15,12 +16,7 @@ return (
 </div>
 
 
-<div className="links">
-
-{/* <span>Home</span>
-<span>General Production</span>
-<span>Feature</span>
-<span>Community</span> */}
+<div className={`links ${open ? "active" : ""}`}>
 
 <span className="nav-link">Home</span>
 <span className="nav-link">General Production</span>
@@ -35,6 +31,7 @@ return (
 Login
 </button>
 
+ <button className="hamburger" onClick={() => setOpen(!open)}> ☰ </button>
 
 </nav>
 

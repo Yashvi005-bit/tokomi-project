@@ -2,10 +2,22 @@
   return (
     <footer className="footer">
       <div className="footer-top">
-        {/* Brand */}
+       
         <div className="footer-brand">
           <div className="footer-logo">
-            <span className="footer-logo-cube">📦</span>
+            <span className="footer-logo-cube">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+      <defs>
+        <linearGradient id="cubeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#8b85ff" />
+          <stop offset="100%" stopColor="#6c63ff" />
+        </linearGradient>
+      </defs>
+      <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill="url(#cubeGradient)" />
+      <path d="M12 2L21 7L12 12L3 7L12 2Z" fill="#a8a3ff" />
+      <path d="M12 12V22L3 17V7L12 12Z" fill="#6c63ff" opacity="0.7" />
+    </svg>
+            </span>
             <span className="footer-logo-text">Tokomi</span>
           </div>
           <p className="footer-desc">
@@ -40,7 +52,7 @@
           </div>
         </div>
 
-        {/* Community */}
+        
         <div className="footer-col">
           <h4>Community</h4>
           <ul>
@@ -57,7 +69,7 @@
           </ul>
         </div>
 
-        {/* About Us */}
+        
         <div className="footer-col">
           <h4>About Us</h4>
           <ul>
@@ -71,7 +83,7 @@
           </ul>
         </div>
 
-        {/* Services */}
+        
         <div className="footer-col">
           <h4>Services</h4>
           <ul>
