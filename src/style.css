@@ -20,23 +20,23 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 30px;
+    /* padding: 30px; */
 
 }
 
 
 .website {
 
-    width: 900px;
+    width:100%;
     background: white;
-    border-radius: 32px;
+    /* border-radius: 32px; */
     overflow: hidden;
     box-shadow:  0 30px 70px rgba(0, 0, 0, .12);
 
 }
 
 section {
-    padding: 70px 55px;
+    padding: 70px 270px;
 }
 
 
@@ -70,6 +70,16 @@ button {
     cursor: pointer;
 
 }
+.box{
+    margin: 15px 68px;
+    width: 91%;
+    height: 74px;
+    background-color:rgb(0 0 0 / 6%);
+   align-items: center;
+   border: 1px solid #ff000005;
+       border-radius: 85px;
+}
+
 
 .nav {
 
@@ -80,9 +90,8 @@ button {
     align-items: center;
 
     justify-content: space-between;
-
     padding: 0 50px;
-
+    
 }
 
 
@@ -178,7 +187,7 @@ button {
 
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 82px;
 
 }
 

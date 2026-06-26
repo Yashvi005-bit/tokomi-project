@@ -5,9 +5,10 @@ function Navbar(){
 const [open, setOpen] = useState(false);
 
 return (
-
+  
+<div className="box">
+  
 <nav className="nav">
-
 
 <div className="logo">
 
@@ -16,7 +17,7 @@ return (
 </div>
 
 
-<div className={`links ${open ? "active" : ""}`}>
+   <div className={`links ${open ? "active" : ""}`}>
 
 <span className="nav-link">Home</span>
 <span className="nav-link">General Production</span>
@@ -24,8 +25,7 @@ return (
 <span className="nav-link">Community</span>
 
 
-</div>
-
+</div> 
 
 <button className="nav-btn">
 Login
@@ -34,6 +34,35 @@ Login
  <button className="hamburger" onClick={() => setOpen(!open)}> ☰ </button>
 
 </nav>
+</div>
+
+// {/* <nav className="nav">
+
+
+// <div className="logo">
+
+// <img src={logo}></img>
+
+// </div>
+
+
+//    <div className={`links ${open ? "active" : ""}`}>
+
+// <span className="nav-link">Home</span>
+// <span className="nav-link">General Production</span>
+// <span className="nav-link">Feature</span>
+// <span className="nav-link">Community</span>
+
+
+// </div> 
+
+// <button className="nav-btn">
+// Login
+// </button>
+
+//  <button className="hamburger" onClick={() => setOpen(!open)}> ☰ </button>
+
+// </nav> */}
 
 )
 

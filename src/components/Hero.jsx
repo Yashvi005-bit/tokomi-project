@@ -18,8 +18,7 @@ extraordinary
 
 
 <p>
-Track leads, get accurate forecasts,
-and focus on what's important.
+Track leads, get accurate forecasts,and focus on what's important.
 </p>
 
 
